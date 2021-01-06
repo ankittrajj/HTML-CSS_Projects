@@ -120,6 +120,9 @@ h1{
     margin: 10px 30px;
     height: 100px;
 }
+
+
+/* -----------------------------------------Navigation Bar---------------------------------------  */
 .navigation-bar{
     float: right;
     list-style: none;
@@ -138,7 +141,7 @@ h1{
     font-size: 90%;
     font-weight: 300px;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 1s;
+    transition: border-bottom .2s;
     word-spacing: 3px;
     padding:8px 0;
 }
@@ -146,8 +149,5 @@ h1{
 .navigation-bar li a:hover,
 .navigation-bar li a:active{
 
-    border-bottom: 2px solid #e67e22;
-    /* border-radius: 50px; */
-    /* background-color: #e67e22; */
-
+    border-bottom: 2px solid #e67d22c0;
 }
