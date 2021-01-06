@@ -17,6 +17,10 @@ html{
     max-width: 1140px;
     margin: 0 auto;
 }
+/* ------------------------------------Section(Features)----------------------------- */
+section{
+    padding: 20px 0;
+}
 
 
 /* -----------------------------Header----------------------------------------------- */
@@ -37,17 +41,37 @@ header{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-h1{
-    margin: 0;
+
+/* ----------------Headings--------------------- */
+h1,h2,h3{
+    /* margin: 0; */
     color: rgb(7, 7, 7);
-    font-size: 200%;
+    /* font-size: 200%; */
     font-weight: 300;
     text-transform: uppercase;
-    /* text-decoration:underline; */
+    
+}
+h1{
+    margin: 0;
+    animation: headerAnim 3s;
     letter-spacing: 1px;
     word-spacing: 1px;
-    animation: headerAnim 3s;
+    font-size: 300;
+
 }
+h2{
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 200%;
+    text-decoration: underline darksalmon 3px;
+}
+h3{
+    font-size: 110%;
+    margin-bottom: 20px;
+
+}
+
 @keyframes headerAnim{
     0%{
         opacity: 0;
@@ -150,4 +174,21 @@ h1{
 .navigation-bar li a:active{
 
     border-bottom: 2px solid #e67d22c0;
+}
+
+/*--------------------- Feature Text SecondLine(Paragraphs)---------------------- */
+.text-heading{
+    margin-left: 20%;
+    line-height: 145%px;
+    width: 70%;
+    padding: 30px 0px;
+    margin-right: 100px;
+}
+
+.box{
+    padding: 2%;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
 }
