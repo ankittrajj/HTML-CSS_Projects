@@ -69,8 +69,13 @@ h2{
 h3{
     font-size: 110%;
     margin-bottom: 20px;
-
+    border-bottom: darksalmon solid 1px ;
 }
+.box :hover{
+    animation: h3Anim 2s;
+}
+
+/* ----------------------------------Animation-------------------------- */
 
 @keyframes headerAnim{
     0%{
@@ -80,6 +85,23 @@ h3{
     }
     80%{
         transform: translateX(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+
+    }
+
+}
+
+@keyframes h3Anim{
+    0%{
+        opacity: 0;
+        transform: translateY(5px);
+
+    }
+    80%{
+        transform: translateY(-10px);
     }
     100%{
         opacity: 1;
@@ -143,6 +165,7 @@ h3{
     padding-right: 10px;
     margin: 10px 30px;
     height: 100px;
+    animation:h3Anim 2s;
 }
 
 
@@ -174,6 +197,7 @@ h3{
 .navigation-bar li a:active{
 
     border-bottom: 2px solid #e67d22c0;
+    /* animation: headerAnim 2s; */
 }
 
 /*--------------------- Feature Text SecondLine(Paragraphs)---------------------- */
